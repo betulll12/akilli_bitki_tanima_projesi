@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Akıllı Bitki Tanıma Projesi</title>
+</head>
+<body>
+    <h1>🌿 Akıllı Bitki Tanıma Sistemi</h1>
+    
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <label for="id_bitki_resmi">Bitki Fotoğrafını Yükle:</label><br>
+        <input type="file" name="bitki_resmi" id="id_bitki_resmi" accept="image/*" required>
+        <button type="submit">Tanımla ve Bakım Bilgisini Göster</button>
+    </form>
+
+    <hr>
+
+    {% if hata_mesaji %}
+        <h3 style="color: red;">🚨 Hata: {{ hata_mesaji }}</h3>
+
+    {% elif bitki_bilgisi %}
+        <h2>✅ Tanımlanan Bitki: {{ bitki_bilgisi.isim }}</h2>
+        
+        {% if bitki_bilgisi.uploaded_url %}
+            <img src="{{ bitki_bilgisi.uploaded_url }}" alt="Yüklenen Resim" style="max-width: 300px; border: 1px solid #ccc;">
+            <br>
+        {% endif %}
+        
+        <h3>Bakım Detayları</h3>
+        <p><strong>Bilimsel Adı:</strong> {{ bitki_bilgisi.bilimsel_isim|default:'Bilinmiyor' }}</p>
+        <p><strong>Sulama Sıklığı:</strong> {{ bitki_bilgisi.sulama }}</p>
+        <p><strong>Işık İhtiyacı:</strong> {{ bitki_bilgisi.isik }}</p>
+        <p><strong>Genel Bakım İpuçları:</strong> {{ bitki_bilgisi.bakim_bilgisi }}</p>
+
+    {% else %}
+        <p>Bir bitki resmi yükleyerek AI teknolojisi ile bitkinizi ve bakım gereksinimlerini öğrenin.</p>
+    {% endif %}
+</body>
+</html>
