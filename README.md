@@ -1,0 +1,1 @@
+# akilli_bitki_tanima_projesi
