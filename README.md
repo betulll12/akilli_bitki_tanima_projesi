@@ -20,8 +20,8 @@ Projeyi anlatan videoya ulaşmak için tıklayınız.
 # Bitki Ekleme Ekranı
 -----------------------
 <p>Bu ekran, projenin arka yüzü olup, bitki tanımlama sonucunda kullanıcıya gösterilecek olan Bakım Detayları'nın (Sulama Sıklığı, Işık İhtiyacı vb.) veritabanına girildiği ve yönetildiği alandır.<p>
-<img height="300" src="resimler/5.png">
-<img height="300" src="resimler/6.png">
+<img height="400" src="resimler/5.png">
+<img height="400" src="resimler/6.png">
 
 # Bitki Tanıma Ekranı
 -----------------------
@@ -31,6 +31,6 @@ Projeyi anlatan videoya ulaşmak için tıklayınız.
 # Tanıma Sonuç Sayfası
 ------------------------
 <p>Modelin tahmin ettiği bitki adı (örn. GÜL) ve veritabanından çekilen detaylı bakım talimatları (Sulama, Işık, Genel İpuçları) bu sayfada gösterilir.<p>
-<img height="300" src="resimler/4.png">
+<img height="400" src="resimler/4.png">
 
 
