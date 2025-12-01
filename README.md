@@ -11,7 +11,7 @@
 
 # VİDEO
 --------
-<a href=>
+<a href="https://drive.google.com/file/d/1H0ohA236ivwRLkk4Ilexi3Ks9GEPIG2N/view?usp=sharing">
 
 Projeyi anlatan videoya ulaşmak için tıklayınız.
 
